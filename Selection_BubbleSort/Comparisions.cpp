@@ -58,9 +58,58 @@ int main()
 
     cout << endl;
     cout << "BUBBLE SORT" << endl;
-    int arr2[5] = {8, 5, 2, 7, 6};
-    bubbleSort(arr2, n);
+    int arr2[8] = {22,7,31,19,13};
+    bubbleSort(arr2, 5);
     cout << "The Sorted Array by using Bubble Sort is : ";
     for (int i = 0; i < n; ++i)
         cout << arr2[i] << " ";
 }
+
+// Q3:- Bubble Sort is an inplace method which needs to modify current array to sort the __cpp_lib_incomplete_container_elements
+
+//      while Insertion sort can be implemented in inplace as well as out place method
+//     In-Place Implementation -> Selection sort can be implemented without using extra space,by just modifying the given input array.The smallest element can be placed in beginning of unsorted array
+//     Out-place Implementation -> Selection sort can also be implemented by making an extra array, finding the minimum from given input array and placing that element in new array
+
+// <----------OUTPUT--------------------->
+// SELECTION SORT
+// comparing : 2 and 0
+// comparing : 0 and 1
+// comparing : 0 and 4
+// comparing : 0 and 3
+// swaping:- 2 and 0
+// comparing : 2 and 1
+// comparing : 1 and 4
+// comparing : 1 and 3
+// swaping:- 2 and 1
+// comparing : 2 and 4
+// comparing : 2 and 3
+// comparing : 4 and 3
+// swaping:- 4 and 3
+//  total comparisions = 10 total swaps:- 3
+// The Sorted Array by using Selection Sort is : 0 1 2 3 4 
+// BUBBLE SORT
+// comparing 22 and 7
+// Swaping :- 22 and 7
+// comparing 22 and 31
+// comparing 31 and 19
+// Swaping :- 31 and 19
+// comparing 31 and 13
+// Swaping :- 31 and 13
+// comparing 7 and 22
+// comparing 22 and 19
+// Swaping :- 22 and 19
+// comparing 22 and 13
+// Swaping :- 22 and 13
+// comparing 22 and 31
+// comparing 7 and 19
+// comparing 19 and 13
+// Swaping :- 19 and 13
+// comparing 19 and 22
+// comparing 22 and 31
+// comparing 7 and 13
+// comparing 13 and 19
+// comparing 19 and 22
+// comparing 22 and 31
+// comparisions = 16 swaps:- 6
+// The Sorted Array by using Bubble Sort is : 7 13 19 22 31
