@@ -200,3 +200,20 @@ int main()
 // space complexity of both structures
 // 1) deleting an element fom an array space complexity is O(1)    
 // 2) deleting an node from BST The space complexity of a binary search tree is O(n) 
+
+// <------------ OUTPUT ------------------------>
+// Enter size of data:-
+// 5
+// Enter Array:- 
+// 2 3 4 5 6
+// 4 2 3 5 6 
+// Enter data to be deleted:-
+// 5
+
+// 4 2 3 6
+// Enter size of data:-
+// 4
+// Enter Element to be deleted: - 
+// 5
+// Enter Array:- 
+// 3 4 5 6
